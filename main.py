@@ -5,9 +5,9 @@ from figuras.circulo import Circulo
 
 # Mapeo de tipos a clases
 TIPOS_FIGURAS = {
-    'cuadrado': Cuadrado,
-    'rectangulo': Rectangulo,
-    'circulo': Circulo
+    'Cuadrado': Cuadrado,
+    'Rectangulo': Rectangulo,
+    'Circulo': Circulo
 }
 
 # Leer datos desde JSON
@@ -19,7 +19,7 @@ def cargar_datos():
 def crear_figuras(datos):
     figuras = []
     for dato in datos:
-        tipo = dato['tipo']        
+        tipo = dato.pop('tipo')
         clase = TIPOS_FIGURAS[tipo]
         if clase:
             figuras.append(clase(**dato))
@@ -31,6 +31,6 @@ if __name__ == "__main__":
     figuras = crear_figuras(datos)
     for figura in figuras:
         print(figura)
-        print(f'Area: {figura.calcular_area()}')
-        print(f'Perimetro: {figura.calcular_perimetro()}')
+        print(f'Area: {figura.area()}')
+        print(f'Perimetro: {figura.perimetro()}')
         print()

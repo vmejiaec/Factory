@@ -1,0 +1,29 @@
+[
+    {
+        "tipo": "Cuadrado",
+        "nombre": "C1",
+        "lado": 5
+    },
+    {
+        "tipo": "Rectangulo",
+        "nombre": "R1",
+        "base": 5,
+        "altura": 3
+    },
+    {
+        "tipo": "Circulo",
+        "nombre": "C1",
+        "radio": 3
+    },
+    {
+        "tipo": "Rectangulo",
+        "nombre": "R2",
+        "base": 4,
+        "altura": 2
+    },
+    {
+        "tipo": "Circulo",
+        "nombre": "C2",
+        "radio": 5
+    }
+]
