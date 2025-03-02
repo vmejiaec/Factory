@@ -25,5 +25,17 @@
         "tipo": "Circulo",
         "nombre": "C2",
         "radio": 5
+    },
+    {
+        "tipo": "Triangulo",
+        "nombre": "T1",
+        "base": 5,
+        "altura": 3
+    },
+    {
+        "tipo": "Triangulo",
+        "nombre": "T2",
+        "base": 4,
+        "altura": 2
     }
 ]

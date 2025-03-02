@@ -1,5 +1,6 @@
 import json
 from figuras import FabricaFiguras
+from figuras_ext.triangulo import Triangulo
 
 # Leer datos desde JSON
 def cargar_datos():
@@ -15,6 +16,9 @@ def cargar_datos():
 
 # main
 if __name__ == "__main__":
+    # Registrar la figura del triangulo
+    FabricaFiguras.registrar_figura('Triangulo', Triangulo)
+    
     datos = cargar_datos()
     figuras = FabricaFiguras.crear_figuras(datos)
     for figura in figuras:
